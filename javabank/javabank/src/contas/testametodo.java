@@ -5,7 +5,13 @@ public class testametodo {
         conta contaDoMatheus = new conta();
 
         contaDoMatheus.saldo = 100;
-        contaDoMatheus.deposita(50);
+        contaDoMatheus.deposita(70);
+        System.out.println(contaDoMatheus.saldo);
+
+        contaDoMatheus.saca(30);
+        System.out.println(contaDoMatheus.saldo);
+
+        contaDoMatheus.saca(200);
         System.out.println(contaDoMatheus.saldo);
     }
 }
