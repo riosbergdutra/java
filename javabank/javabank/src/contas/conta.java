@@ -12,10 +12,19 @@ public class conta {
 
     public boolean saca(double valor) {
       if(this.saldo >= valor) {
-        this.saldo = this.saldo - valor;
+        this.saldo -= valor;
         return true;
       }else{
         System.out.println("não há saldo suficiente saque negado");
+        return false;
+      }
+    }
+    public boolean transfere(double valor, conta destino) {
+      if(this.saldo >= valor) {
+        this.saldo -= valor;
+        destino.deposita(valor);
+        return true;
+      } else {
         return false;
       }
     }
