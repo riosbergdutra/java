@@ -1,10 +1,13 @@
 package contas;
+
+import cliente.Cliente;
+
 //saldo, agencia, numero e titular.
 public class conta {
     double saldo;
     int agencia;
     int numero;
-    String titular;
+   public Cliente titular;
 
   public void deposita(double valor) {
     this.saldo = this.saldo + valor;

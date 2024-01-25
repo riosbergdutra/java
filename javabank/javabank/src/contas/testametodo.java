@@ -20,5 +20,7 @@ public class testametodo {
         contaDaMaria.transfere(300, contaDoMatheus);
         System.out.println("o saldo da maria depois da transferencia :"+contaDaMaria.saldo);
         System.out.println("o saldo do matheus depois da transferencia :"+contaDoMatheus.saldo);
+
+        System.out.println(contaDoMatheus.titular);
     }
 }
