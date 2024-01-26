@@ -6,10 +6,8 @@ public class testaSacaNegativo {
     Conta conta = new Conta();
     conta.deposita(100);
     conta.saca(200);
-    System.out.println(conta.saldo);
+    System.out.println(conta.getSaldo());
 
-    //proibida
-    conta.saldo = conta.saldo - 200;
-    System.out.println(conta.saldo); 
+    
 }
 }

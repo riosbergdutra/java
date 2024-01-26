@@ -12,9 +12,5 @@ public class testaBanco {
         Conta contaDoMatheus = new Conta();
         contaDoMatheus.deposita(100);
 
-        contaDoMatheus.titular = matheus;
-
-        System.out.println(contaDoMatheus.titular.nome);
-
     }
 }

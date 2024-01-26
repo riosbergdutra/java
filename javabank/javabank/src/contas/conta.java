@@ -5,9 +5,9 @@ import cliente.Cliente;
 //saldo, agencia, numero e titular.
 public class Conta {
    private double saldo;
-    int agencia;
-    int numero;
-   public Cliente titular;
+   private int agencia;
+   private int numero;
+   private Cliente titular;
 
   public void deposita(double valor) {
     this.saldo = this.saldo + valor;
@@ -31,8 +31,26 @@ public class Conta {
         return false;
       }
     }
-
+    //getters
     public double getSaldo() {
-      return this.saldo;
+        return saldo;
     }
+    public int getNumero() {
+        return numero;
+    }
+    public int getAgencia() {
+        return agencia;
+    }
+    public Cliente getTitular() {
+        return titular;
+    }
+
+    //setters
+    public void setNumero(int numero) {
+        this.numero = numero;
+    }
+    public void setAgencia(int agencia) {
+        this.agencia = agencia;
+    }
+
 }
