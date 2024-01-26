@@ -1,6 +1,6 @@
 package cliente;
 
-import contas.conta;
+import contas.Conta;
 
 public class testaBanco {
     public static void main(String[] args) {
@@ -9,7 +9,7 @@ public class testaBanco {
         matheus.CPF = "111.111.111-11";
         matheus.profissao = "programador";
 
-        conta contaDoMatheus = new conta();
+        Conta contaDoMatheus = new Conta();
         contaDoMatheus.deposita(100);
 
         contaDoMatheus.titular = matheus;

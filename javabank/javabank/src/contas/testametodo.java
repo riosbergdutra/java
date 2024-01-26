@@ -2,7 +2,7 @@ package contas;
 
 public class testametodo {
     public static void main(String[] args) {
-        conta contaDoMatheus = new conta();
+        Conta contaDoMatheus = new Conta();
 
         contaDoMatheus.saldo = 100;
         contaDoMatheus.deposita(70);
@@ -14,7 +14,7 @@ public class testametodo {
         contaDoMatheus.saca(200);
         System.out.println("O saldo do matheus antes da transferencia:"+contaDoMatheus.saldo);
 
-        conta contaDaMaria = new conta();
+        Conta contaDaMaria = new Conta();
         contaDaMaria.deposita(1000);
 
         contaDaMaria.transfere(300, contaDoMatheus);
