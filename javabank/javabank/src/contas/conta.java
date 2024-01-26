@@ -44,7 +44,6 @@ public class Conta {
     public Cliente getTitular() {
         return titular;
     }
-
     //setters
     public void setNumero(int numero) {
         this.numero = numero;
@@ -52,5 +51,7 @@ public class Conta {
     public void setAgencia(int agencia) {
         this.agencia = agencia;
     }
-
+    public void setTitular(Cliente titular) {
+        this.titular = titular;
+    }
 }
